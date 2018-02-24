@@ -219,9 +219,9 @@
         echo "<i>".$row['author']."</i>";
         echo "<p>".$row['date']."</p>";
         echo "<div class='clearfix'></div>";
-        echo "<form method='POST' action='##########'>
+        echo "<form method='POST' action='includes/deletePost.inc.php'>
       <input type='hidden' name='id' value='".$row['id']."'>
-      <button type='submit' class='btn btn-outline-secondary btn-sm mb-4' name='##########'>Obriši obavijest</button>
+      <button type='submit' class='btn btn-outline-secondary btn-sm mb-4' name='postDelete'>Obriši obavijest</button>
       </form>";
         }
       }
