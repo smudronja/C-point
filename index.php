@@ -229,7 +229,7 @@
 
                
 <!-- PDF icon -->
-            <a href="#"><i class="fa fa-file-pdf-o" style="font-size:24px"></i></a>
+            <a href="files/lagano.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:24px"></i></a>
 
             </div><!--/span-->
           </div><!--/row-->
@@ -244,7 +244,25 @@
             <a href="http://kp/MM/CC/default.aspx" class="list-group-item" target="_blank">CC portal</a>
           </div>
 
-          <button type="button" class="btn btn-primary mt-4" data-toggle="modal" data-target="#InsertInfoModal">Unos nove obavijesti &raquo;</button>
+          <button type="button" class="btn btn-primary mt-4 mb-4" data-toggle="modal" data-target="#InsertInfoModal">Unos nove obavijesti &raquo;</button>
+
+          <div class="list-group">
+            <a href="#" class="list-group-item active">Objave</a>
+                      
+          <?php 
+              $sql = "SELECT subject FROM posts ORDER BY id DESC;";
+              $result = mysqli_query($conn, $sql);
+              $resultCheck = mysqli_num_rows($result);
+              if ($resultCheck > 0) {
+                while ($row = mysqli_fetch_assoc($result)) {
+                echo "<a href='#".$row['subject']."' id='".$row['subject']."' class='list-group-item'>".$row['subject']."</a>";
+                }
+              }
+            ?>     
+
+
+
+          </div>
         </div><!--/span-->
 	</div><!--/row-->
 
@@ -262,15 +280,15 @@
                       <form action="includes/setPost.inc.php" method="POST">
                         <div class="form-group">
                           <label class="col-form-label">Naslov:</label>
-                          <input type="text" class="form-control" name="subject">
+                          <input type="text" class="form-control" name="subject" required>
                         </div>
                         <div class="form-group">
                           <label class="col-form-label">Poruka:</label>
-                          <textarea class="form-control" name="content"></textarea>
+                          <textarea class="form-control" name="content" required></textarea>
                         </div>
                         <div class="form-group">
                           <label class="col-form-label">Unio:</label>
-                          <input type="text" class="form-control" name="author" placeholder= "Ime i Prezime">
+                          <input type="text" class="form-control" name="author" placeholder= "Ime i Prezime" required>
                         </div>
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Zatvori</button>
                         <button type="submit" class="btn btn-primary" name="submit">Pošalji</button>
