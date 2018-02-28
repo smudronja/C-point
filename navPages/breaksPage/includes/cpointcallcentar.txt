@@ -1,0 +1,16 @@
+create table breakslong (
+	id int(11) not null PRIMARY KEY AUTO_INCREMENT,
+	firstLastName varchar(128) not null,
+	selectTime float not null,
+	date datetime not null
+);
+
+
+create table breaksshort (
+	id int(11) not null PRIMARY KEY AUTO_INCREMENT,
+	firstLastName varchar(128) not null,
+	timeSelect varchar(128) not null,
+	timeDuration varchar(128) not null,
+	date datetime not null
+);
+

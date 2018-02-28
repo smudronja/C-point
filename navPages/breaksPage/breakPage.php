@@ -213,10 +213,10 @@
 <form action="#" method="POST">
 <div class="input-group mb-3">
   <div class="input-group-prepend">
-    <input type="submit" class="btn btn-outline-secondary" name="submit" value="Odaberi" />
+    <input type="submit" class="btn btn-outline-secondary" name="submitFirst" value="Potvrdi" />
   </div>
   <select class="custom-select" id="inputGroupSelect03" name="operator1">
-    <option selected>Choose...</option>
+    <option selected>Odaberi...</option>
     <option>Duga pauza</option>
     <option>Kratka Pauza</option>
   </select>
@@ -225,47 +225,47 @@
 
 <?php 
 
-  if(isset($_POST['submit'])){
+  if(isset($_POST['submitFirst'])){
 $selected_val = $_POST['operator1'];
 switch ($selected_val) {
     case 'Duga pauza':
       echo 
-      "<form>
+      "<form action= includes/setTime.inc.php method='POST'>
       <div class='input-group mb-3'>
               <div class='input-group-prepend'>
                 <span class='input-group-text' id='inputGroup-sizing-sm'>Ime i prezime</span>
               </div>
-              <input type='text' class='form-control' name='firstLastName'>
+              <input type='text' class='form-control' name='firstLastName' placeholder='Duga pauza' required>
 
-              <select class='custom-select' id='inputGroupSelect04'>
-                <option selected>Choose...</option>
-                <option>08:00</option>
-                <option>08:30</option>
-                <option>09:00</option>
-                <option>09:30</option>
-                <option>10:00</option>
-                <option>10:30</option>
-                <option>11:00</option>
-                <option>11:30</option>
-                <option>12:00</option>
-                <option>12:30</option>
-                <option>13:00</option>
-                <option>13:30</option>
-                <option>14:00</option>
-                <option>14:30</option>
-                <option>15:00</option>
-                <option>15:30</option>
-                <option>16:00</option>
-                <option>16:30</option>
-                <option>17:00</option>
-                <option>17:30</option>
-                <option>18:00</option>
-                <option>18:30</option>
-                <option>19:00</option>
-                <option>19:30</option>
+              <select class='custom-select' id='inputGroupSelect04' name='timeOption'>
+                <option selected>Odaberi...</option>
+                <option>08.00</option>
+                <option>08.30</option>
+                <option>09.00</option>
+                <option>09.30</option>
+                <option>10.00</option>
+                <option>10.30</option>
+                <option>11.00</option>
+                <option>11.30</option>
+                <option>12.00</option>
+                <option>12.30</option>
+                <option>13.00</option>
+                <option>13.30</option>
+                <option>14.00</option>
+                <option>14.30</option>
+                <option>15.00</option>
+                <option>15.30</option>
+                <option>16.00</option>
+                <option>16.30</option>
+                <option>17.00</option>
+                <option>17.30</option>
+                <option>18.00</option>
+                <option>18.30</option>
+                <option>19.00</option>
+                <option>19.30</option>
               </select>
           <div class='input-group-append'>
-            <button class='btn btn-outline-secondary' type='button'>Button</button>
+            <input type='submit' class='btn btn-outline-secondary' type='button' name='submitSecond' value='Potvrdi' />
           </div>
         </div>
       </form>";
@@ -273,12 +273,57 @@ switch ($selected_val) {
       break;
 
     case 'Kratka Pauza':
-      echo "ovo je kratka pauza";
+      echo "<form action='includes/setTime.inc.php' method='POST'>
+      <div class='input-group mb-3'>
+              <div class='input-group-prepend'>
+                <span class='input-group-text' id='inputGroup-sizing-sm'>Ime i prezime</span>
+              </div>
+              <input type='text' class='form-control' name='firstLastName' placeholder='Kratka pauza' required> 
+              
+              <select class='custom-select' id='inputGroupSelect04' name='hours'>
+                <option selected>Sati...</option>
+                <option>08</option>
+                <option>09</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+              </select>
+
+              <select class='custom-select' id='inputGroupSelect04' name='minutes'>
+                <option selected>Minute...</option>
+                <option>00</option>
+                <option>05</option>
+                <option>10</option>
+                <option>15</option>
+                <option>20</option>
+                <option>25</option>
+                <option>30</option>
+                <option>35</option>
+                <option>40</option>
+                <option>45</option>
+                <option>50</option>
+                <option>55</option>
+              </select>
+
+              <div class='input-group-prepend'>
+                <span class='input-group-text' id='inputGroup-sizing-sm'>Trajanje</span>
+              </div>
+              <input type='text' class='form-control' name='timeDuration' placeholder='npr. 10 min' required>
+              
+          <div class='input-group-append'>
+            <input type='submit' class='btn btn-outline-secondary' type='button' name='submitThird' value='Potvrdi'/>
+          </div>
+        </div>
+      </form>"; 
       break;
 
-    default:
-      
-      break;
   }  
 }
 
@@ -295,102 +340,331 @@ switch ($selected_val) {
       <tr>
         <th>#</th>
         <th>Duga pauza 00-30 min</th>
-        <th>Duga pauza 30-00 min</th>
         <th>Kratka pauza 00-30 min</th>
+        <th>Duga pauza 30-00 min</th>
         <th>Kratka pauza 30-00 min</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td>08:00</td>
-        <td>Anna</td>
-        <td>Pitt</td>
-        <td>35</td>
-        <td>New York</td>
+        <td>
+        <?php
+        $sql = "SELECT firstLastName FROM breakslong WHERE selectTime BETWEEN 7.59 AND 8.29 ORDER BY date ASC LIMIT 4;";
+         include 'includes/orderTable.inc.php';
+        ?>
+        </td>
+        <td>
+          <?php
+          $sql = "SELECT timeSelect, firstLastName, timeDuration FROM breaksshort WHERE timeSelect BETWEEN 7.59 AND 8.29 ORDER BY date ASC LIMIT 10;";
+          include 'includes/orderTableShort.inc.php';
+          ?>
+        </td>
+        <td>
+        <?php
+          $sql = "SELECT firstLastName FROM breakslong WHERE  selectTime BETWEEN 8.29 AND 8.59 ORDER BY   date ASC LIMIT 4;";
+            include 'includes/orderTable.inc.php';
+        ?>
+        </td>
+        <td>
+          <?php
+          $sql = "SELECT timeSelect, firstLastName, timeDuration FROM breaksshort WHERE timeSelect BETWEEN 8.29 AND 8.59 ORDER BY date ASC LIMIT 10;";
+          include 'includes/orderTableShort.inc.php';
+          ?>
+        </td>
       </tr>
       <tr>
         <td>09:00</td>
-        <td>Anna</td>
-        <td>Pitt</td>
-        <td>35</td>
-        <td>New York</td>
+        <td>
+          <?php
+          $sql = "SELECT firstLastName FROM breakslong WHERE selectTime BETWEEN 8.59 AND 9.29 ORDER BY date ASC LIMIT 4;";
+          include 'includes/orderTable.inc.php';
+    ?>    
+        </td>
+        <td>
+          <?php
+          $sql = "SELECT timeSelect, firstLastName, timeDuration FROM breaksshort WHERE timeSelect BETWEEN 8.59 AND 9.29 ORDER BY date ASC LIMIT 10;";
+          include 'includes/orderTableShort.inc.php';
+          ?>
+        </td>
+        <td>
+          <?php
+          $sql = "SELECT firstLastName FROM breakslong WHERE  selectTime BETWEEN 9.29 AND 9.59 ORDER BY   date ASC LIMIT 4;";
+            include 'includes/orderTable.inc.php';
+          ?>
+        </td>
+        <td>
+          <?php
+          $sql = "SELECT timeSelect, firstLastName, timeDuration FROM breaksshort WHERE timeSelect BETWEEN 9.29 AND 9.59 ORDER BY date ASC LIMIT 10;";
+          include 'includes/orderTableShort.inc.php';
+          ?>
+          </td>
       </tr>
       <tr>
         <td>10:00</td>
-        <td>Anna</td>
-        <td>Pitt</td>
-        <td>35</td>
-        <td>New York</td>
+        <td>
+          <?php
+          $sql = "SELECT firstLastName FROM breakslong WHERE selectTime BETWEEN 9.59 AND 10.29 ORDER BY date ASC LIMIT 4;";
+          include 'includes/orderTable.inc.php';
+    ?>
+        </td>
+        <td>
+          <?php
+          $sql = "SELECT timeSelect, firstLastName, timeDuration FROM breaksshort WHERE timeSelect BETWEEN 9.59 AND 10.29 ORDER BY date ASC LIMIT 10;";
+          include 'includes/orderTableShort.inc.php';
+          ?>
+        </td>
+        <td>
+          <?php
+          $sql = "SELECT firstLastName FROM breakslong WHERE  selectTime BETWEEN 10.29 AND 10.59 ORDER BY   date ASC LIMIT 4;";
+            include 'includes/orderTable.inc.php';
+          ?>
+        </td>
+        <td>
+          <?php
+          $sql = "SELECT timeSelect, firstLastName, timeDuration FROM breaksshort WHERE timeSelect BETWEEN 10.29 AND 10.59 ORDER BY date ASC LIMIT 10;";
+          include 'includes/orderTableShort.inc.php';
+          ?>
+        </td>
       </tr>
       <tr>
         <td>11:00</td>
-        <td>Anna</td>
-        <td>Pitt</td>
-        <td>35</td>
-        <td>New York</td>
+        <td>
+          <?php
+          $sql = "SELECT firstLastName FROM breakslong WHERE selectTime BETWEEN 10.59 AND 11.29 ORDER BY date ASC LIMIT 4;";
+          include 'includes/orderTable.inc.php';
+    ?>
+        </td>
+        <td>
+          <?php
+          $sql = "SELECT timeSelect, firstLastName, timeDuration FROM breaksshort WHERE timeSelect BETWEEN 10.59 AND 11.29 ORDER BY date ASC LIMIT 10;";
+          include 'includes/orderTableShort.inc.php';
+          ?>
+        </td>
+        <td>
+          <?php
+          $sql = "SELECT firstLastName FROM breakslong WHERE  selectTime BETWEEN 11.29 AND 11.59 ORDER BY   date ASC LIMIT 4;";
+            include 'includes/orderTable.inc.php';
+          ?>
+        </td>
+        <td>
+          <?php
+          $sql = "SELECT timeSelect, firstLastName, timeDuration FROM breaksshort WHERE timeSelect BETWEEN 11.29 AND 11.59 ORDER BY date ASC LIMIT 10;";
+          include 'includes/orderTableShort.inc.php';
+          ?>
+        </td>
       </tr>
       <tr>
         <td>12:00</td>
-        <td>Anna</td>
-        <td>Pitt</td>
-        <td>35</td>
-        <td>New York</td>
+        <td>
+          <?php
+          $sql = "SELECT firstLastName FROM breakslong WHERE selectTime BETWEEN 11.59 AND 12.29 ORDER BY date ASC LIMIT 4;";
+          include 'includes/orderTable.inc.php';
+    ?>
+        </td>
+        <td>
+          <?php
+          $sql = "SELECT timeSelect, firstLastName, timeDuration FROM breaksshort WHERE timeSelect BETWEEN 11.59 AND 12.29 ORDER BY date ASC LIMIT 10;";
+          include 'includes/orderTableShort.inc.php';
+          ?>
+        </td>
+        <td>
+          <?php
+          $sql = "SELECT firstLastName FROM breakslong WHERE  selectTime BETWEEN 12.29 AND 12.59 ORDER BY   date ASC LIMIT 4;";
+            include 'includes/orderTable.inc.php';
+          ?>
+        </td>
+        <td>
+          <?php
+          $sql = "SELECT timeSelect, firstLastName, timeDuration FROM breaksshort WHERE timeSelect BETWEEN 12.29 AND 12.59 ORDER BY date ASC LIMIT 10;";
+          include 'includes/orderTableShort.inc.php';
+          ?>
+        </td>
       </tr>
       <tr>
         <td>13:00</td>
-        <td>Anna</td>
-        <td>Pitt</td>
-        <td>35</td>
-        <td>New York</td>
+        <td>
+          <?php
+          $sql = "SELECT firstLastName FROM breakslong WHERE selectTime BETWEEN 12.59 AND 13.29 ORDER BY date ASC LIMIT 4;";
+          include 'includes/orderTable.inc.php';
+    ?>
+        </td>
+        <td>
+          <?php
+          $sql = "SELECT timeSelect, firstLastName, timeDuration FROM breaksshort WHERE timeSelect BETWEEN 12.59 AND 13.29 ORDER BY date ASC LIMIT 10;";
+          include 'includes/orderTableShort.inc.php';
+          ?>
+        </td>
+        <td>
+          <?php
+          $sql = "SELECT firstLastName FROM breakslong WHERE  selectTime BETWEEN 13.29 AND 13.59 ORDER BY   date ASC LIMIT 4;";
+            include 'includes/orderTable.inc.php';
+          ?>
+          </td>
+        <td>
+          <?php
+          $sql = "SELECT timeSelect, firstLastName, timeDuration FROM breaksshort WHERE timeSelect BETWEEN 13.29 AND 13.59 ORDER BY date ASC LIMIT 10;";
+          include 'includes/orderTableShort.inc.php';
+          ?>
+        </td>
       </tr>
       <tr>
         <td>14:00</td>
-        <td>Anna</td>
-        <td>Pitt</td>
-        <td>35</td>
-        <td>New York</td>
+        <td>
+          <?php
+          $sql = "SELECT firstLastName FROM breakslong WHERE selectTime BETWEEN 13.59 AND 14.29 ORDER BY date ASC LIMIT 4;";
+          include 'includes/orderTable.inc.php';
+    ?>
+        </td>
+        <td>
+          <?php
+          $sql = "SELECT timeSelect, firstLastName, timeDuration FROM breaksshort WHERE timeSelect BETWEEN 13.59 AND 14.29 ORDER BY date ASC LIMIT 10;";
+          include 'includes/orderTableShort.inc.php';
+          ?>
+        </td>
+        <td>
+          <?php
+          $sql = "SELECT firstLastName FROM breakslong WHERE  selectTime BETWEEN 14.29 AND 14.59 ORDER BY   date ASC LIMIT 4;";
+            include 'includes/orderTable.inc.php';
+          ?>
+        </td>
+        <td>
+          <?php
+          $sql = "SELECT timeSelect, firstLastName, timeDuration FROM breaksshort WHERE timeSelect BETWEEN 14.29 AND 14.59 ORDER BY date ASC LIMIT 10;";
+          include 'includes/orderTableShort.inc.php';
+          ?>
+        </td>
       </tr>
       <tr>
         <td>15:00</td>
-        <td>Anna</td>
-        <td>Pitt</td>
-        <td>35</td>
-        <td>New York</td>
+        <td>
+          <?php
+          $sql = "SELECT firstLastName FROM breakslong WHERE selectTime BETWEEN 14.59 AND 15.29 ORDER BY date ASC LIMIT 4;";
+          include 'includes/orderTable.inc.php';
+    ?>
+        </td>
+        <td>
+          <?php
+          $sql = "SELECT timeSelect, firstLastName, timeDuration FROM breaksshort WHERE timeSelect BETWEEN 14.59 AND 15.29 ORDER BY date ASC LIMIT 10;";
+          include 'includes/orderTableShort.inc.php';
+          ?>
+        </td>
+        <td>
+          <?php
+          $sql = "SELECT firstLastName FROM breakslong WHERE  selectTime BETWEEN 15.29 AND 15.59 ORDER BY   date ASC LIMIT 4;";
+            include 'includes/orderTable.inc.php';
+          ?>
+        </td>
+        <td>
+          <?php
+          $sql = "SELECT timeSelect, firstLastName, timeDuration FROM breaksshort WHERE timeSelect BETWEEN 15.29 AND 15.59 ORDER BY date ASC LIMIT 10;";
+          include 'includes/orderTableShort.inc.php';
+          ?>
+        </td>
       </tr>
       <tr>
         <td>16:00</td>
-        <td>Anna</td>
-        <td>Pitt</td>
-        <td>35</td>
-        <td>New York</td>
+        <td>
+          <?php
+          $sql = "SELECT firstLastName FROM breakslong WHERE selectTime BETWEEN 15.59 AND 16.29 ORDER BY date ASC LIMIT 4;";
+          include 'includes/orderTable.inc.php';
+    ?>    
+        </td>
+        <td>
+          <?php
+          $sql = "SELECT timeSelect, firstLastName, timeDuration FROM breaksshort WHERE timeSelect BETWEEN 15.59 AND 16.29 ORDER BY date ASC LIMIT 10;";
+          include 'includes/orderTableShort.inc.php';
+          ?>
+        </td>
+        <td>
+          <?php
+          $sql = "SELECT firstLastName FROM breakslong WHERE  selectTime BETWEEN 16.29 AND 16.59 ORDER BY   date ASC LIMIT 4;";
+            include 'includes/orderTable.inc.php';
+          ?>
+        </td>
+        <td>
+          <?php
+          $sql = "SELECT timeSelect, firstLastName, timeDuration FROM breaksshort WHERE timeSelect BETWEEN 16.29 AND 16.59 ORDER BY date ASC LIMIT 10;";
+          include 'includes/orderTableShort.inc.php';
+          ?>
+        </td>
       </tr>
       <tr>
         <td>17:00</td>
-        <td>Anna</td>
-        <td>Pitt</td>
-        <td>35</td>
-        <td>New York</td>
+        <td>
+          <?php
+          $sql = "SELECT firstLastName FROM breakslong WHERE selectTime BETWEEN 17.59 AND 17.29 ORDER BY date ASC LIMIT 4;";
+          include 'includes/orderTable.inc.php';
+    ?>
+        </td>
+        <td>
+          <?php
+          $sql = "SELECT timeSelect, firstLastName, timeDuration FROM breaksshort WHERE timeSelect BETWEEN 16.59 AND 17.29 ORDER BY date ASC LIMIT 10;";
+          include 'includes/orderTableShort.inc.php';
+          ?>
+        </td>
+        <td>
+          <?php
+          $sql = "SELECT firstLastName FROM breakslong WHERE  selectTime BETWEEN 17.29 AND 17.59 ORDER BY   date ASC LIMIT 4;";
+            include 'includes/orderTable.inc.php';
+          ?>
+          </td>
+        <td>
+          <?php
+          $sql = "SELECT timeSelect, firstLastName, timeDuration FROM breaksshort WHERE timeSelect BETWEEN 17.29 AND 17.59 ORDER BY date ASC LIMIT 10;";
+          include 'includes/orderTableShort.inc.php';
+          ?>
+        </td>
       </tr>
       <tr>
         <td>18:00</td>
-        <td>Anna</td>
-        <td>Pitt</td>
-        <td>35</td>
-        <td>New York</td>
+        <td>
+          <?php
+          $sql = "SELECT firstLastName FROM breakslong WHERE selectTime BETWEEN 19.59 AND 19.29 ORDER BY date ASC LIMIT 4;";
+          include 'includes/orderTable.inc.php';
+    ?>
+        </td>
+        <td>
+          <?php
+          $sql = "SELECT timeSelect, firstLastName, timeDuration FROM breaksshort WHERE timeSelect BETWEEN 17.59 AND 18.29 ORDER BY date ASC LIMIT 10;";
+          include 'includes/orderTableShort.inc.php';
+          ?>
+        </td>
+        <td>
+          <?php
+          $sql = "SELECT firstLastName FROM breakslong WHERE  selectTime BETWEEN 18.29 AND 18.59 ORDER BY   date ASC LIMIT 4;";
+            include 'includes/orderTable.inc.php';
+          ?>
+          </td>
+        <td>
+          <?php
+          $sql = "SELECT timeSelect, firstLastName, timeDuration FROM breaksshort WHERE timeSelect BETWEEN 18.29 AND 18.59 ORDER BY date ASC LIMIT 10;";
+          include 'includes/orderTableShort.inc.php';
+          ?>
+        </td>
       </tr>
       <tr>
         <td>19:00</td>
-        <td>Anna</td>
-        <td>Pitt</td>
-        <td>35</td>
-        <td>New York</td>
-      </tr>
-      <tr>
-        <td>20:00</td>
-        <td>Anna</td>
-        <td>Pitt</td>
-        <td>35</td>
-        <td>New York</td>
+        <td>
+          <?php
+          $sql = "SELECT firstLastName FROM breakslong WHERE selectTime BETWEEN 18.59 AND 19.29 ORDER BY date ASC LIMIT 4;";
+          include 'includes/orderTable.inc.php';
+    ?>
+        </td>
+        <td><?php
+          $sql = "SELECT timeSelect, firstLastName, timeDuration FROM breaksshort WHERE timeSelect BETWEEN 18.59 AND 19.29 ORDER BY date ASC LIMIT 10;";
+          include 'includes/orderTableShort.inc.php';
+          ?></td>
+        <td>
+          <?php
+          $sql = "SELECT firstLastName FROM breakslong WHERE selectTime BETWEEN 19.29 AND 19.59 ORDER BY date ASC LIMIT 4;";
+          include 'includes/orderTable.inc.php';
+    ?>
+    </td>
+        <td><?php
+          $sql = "SELECT timeSelect, firstLastName, timeDuration FROM breaksshort WHERE timeSelect BETWEEN 19.29 AND 19.59 ORDER BY date ASC LIMIT 10;";
+          include 'includes/orderTableShort.inc.php';
+          ?></td>
       </tr>
     </tbody>
   </table>
@@ -401,6 +675,17 @@ switch ($selected_val) {
   </div>
 </div>
 
+
+<div class="row">
+  <div class="col"></div>
+  <div class="col col-lg-2">
+    <form method="GET" action="includes/deleteBreaks.inc.php">
+      <input type='submit' class="btn btn-danger" name="brakesDelete" value="Izbriši sve">
+    </form>
+  </div>
+</div>
+
+  
      <hr>
 
     </main><!--/.container-->
@@ -420,5 +705,7 @@ switch ($selected_val) {
   <script src="../../js/bootstrap-4-navbar.js"></script>
   
   <script src="../../js/modal.js"></script>
+
+  <script src="includes/.inc.php"></script>
 </body>
 </html>
