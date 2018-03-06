@@ -24,7 +24,7 @@
 		<!--Navbar - start -->
 
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#">C-point</a>
+        <a class="navbar-brand" href="..\..\index.php">C-point</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>

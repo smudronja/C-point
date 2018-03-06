@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>C-point</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="..\..\css\style.css">
+  
+</head>
+<body>
+
+    <!-- Navbar - start -->
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="..\..\index.html">C-point</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="https://bootstrapthemes.co" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Osiguranja</a>
+                          
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+                             <li><a class="dropdown-item dropdown-toggle" href="#">Vozila</a>
+                                <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="..\vozila\autoodgovornost.html">Autoodgovornost</a></li>
+                                        <li><a class="dropdown-item" href="..\vozila\AOplus.html">AO plus</a></li>
+                                        <li><a class="dropdown-item" href="..\vozila\zastitaCObonusa.html">Zaštita CO bonusa</a></li>
+                                        <li><a class="dropdown-item" href="..\vozila\provala.html">Provala</a></li>
+                                        <li><a class="dropdown-item" href="..\vozila\AOvuca.html">AO vuča</a></li>
+                                        <li><a class="dropdown-item" href="..\vozila\osiguranje_od_autonezgode.html">Osiguranje od autonezgode</a></li>
+                                        <li><a class="dropdown-item" href="..\vozila\autokasko.html">Autokasko</a></li>
+                                        <li><a class="dropdown-item" href="..\vozila\croatia_asistencija_i_putni_andeo.html">Croatia asistencija i Putni Anđeo</a></li>
+                                        <li><a class="dropdown-item" href="..\vozila\croatia_premium.html">Croatia Premium</a></li>
+                                    </ul>
+                             </li>
+
+                             <li><a class="dropdown-item dropdown-toggle" href="#">Životno</a>
+                                <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="croatia_stipendija.html">Croatia stipendija-osobna renta s određenim trajanjem</a></li>
+                                        <li><a class="dropdown-item" href="dopunsko_osiguranje_malignih_bolesti.html">Dopunsko osiguranje malignih bolesti</a></li>
+                                        <li><a class="dropdown-item" href="dopunsko_osiguranje_djece_od_posljedica_nesretnog_slučaja.html">Dopunsko osiguranje djece od posljedica nesretnog slučaja</a></li>
+                                        <li><a class="dropdown-item" href="krug_zivota.html">Krug života-doživotno osiguranje za slučaj smrti</a></li>
+                                        <li><a class="dropdown-item" href="mjesovito osiguranje_za_slucaj_smrti_i_dozivljenja.html">Mješovito osiguranje za slučaj smrti i doživljenja</a></li>
+                                        <li><a class="dropdown-item" href="stedno_osiguranje_djece.html">Štedno osiguranje djece</a></li>
+                                        <li><a class="dropdown-item" href="riziko_plus.html">Riziko PLUS-osiguranje za slučaj smrti</a></li>
+                                        <li><a class="dropdown-item" href="kolektivno_osiguranje_zivota_slucaj_smrt_i_dozivljenja.html">Kolektivno osiguranje života za slučaj smrti i doživljenja</a></li>
+                                    </ul>
+                             </li>
+
+                             <li><a class="dropdown-item dropdown-toggle" href="#">Imovina</a>
+                                <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="..\imovina\croatia_imovina.html">Croatia imovina</a></li>
+                                        <li><a class="dropdown-item" href="..\imovina\osiguranje_turistickih_apartmana-turist_plus.html">Osiguranje turističkih apartmana-Turist plus</a></li>
+                                        <li><a class="dropdown-item" href="osiguranje_od_provale_krade_i_razbojstva.html">Osiguranje od provale krađe i razbojstva</a></li>
+                                        <li><a class="dropdown-item" href="..\imovina\osiguranje_od_požara.html">Osiguranje od požara</a></li>
+                                        <li><a class="dropdown-item" href="..\imovina\osiguranje_kucnih_ljubimaca.html">Osiguranje kućnih ljubimaca</a></li>
+                                        <li><a class="dropdown-item" href="..\imovina\osiguranje_od_potresa.html">Osiguranje od potresa</a></li>
+                                        <li><a class="dropdown-item" href="..\imovina\osiguranje_usjeva.html">Osiguranje usjeva</a></li>
+                                        <li><a class="dropdown-item" href="..\imovina\osiguranje_stakla_od_loma.html">Osiguranje stakla od loma</a></li>
+                                    </ul>
+                             </li>
+                                
+
+                             <li><a class="dropdown-item dropdown-toggle" href="#">Nezgoda</a>
+                                <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="..\nezgoda\individualno_osiguranje_od_posljedica_nesretnog_slucaja.html">Individualno osiguranje od posljedica nesretnog slučaja</a></li>
+                                        <li><a class="dropdown-item" href="..\nezgoda\osiguranje_zivotnog_standarda.html">Osiguranje životnog standarda</a></li>
+                                        <li><a class="dropdown-item" href="..\nezgoda\kolektivno_osiguranje_od_posljedica_nesretnog_slucaja.html">Kolektivno osiguranje od posljedica nesretnog slučaja</a></li>
+                                        <li><a class="dropdown-item" href="..\nezgoda\osiguranje_menadera.html">Osiguranje menađera</a></li>
+                                        <li><a class="dropdown-item" href="..\nezgoda\osiguranje_djece_ucenika_i_studenata.html">Osiguranje djece, učenika i studenata</a></li>
+                                    </ul>
+                             </li>
+              
+              <li><a class="dropdown-item dropdown-toggle" href="#">Putno</a>
+                                <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="..\putno\putno_zdravstveno_osiguranje.html">Putno zdravstveno osiguranje</a></li>
+                                        <li><a class="dropdown-item" href="..\putno\kasko_auto_put.html">Kasko AUTO PUT</a></li>
+                                        <li><a class="dropdown-item" href="..\putno\osiguranje_otkaza_putovanja.html">Osiguranje otkaza putovanja</a></li>
+                                        <li><a class="dropdown-item" href="..\putno\dodatno_osiguranje_nezgode_uz_putno_zdravstveno_osiguranje.html">Dodatno osiguranje nezgode uz putno zdravstveno osiguranje</a></li>
+                                        <li><a class="dropdown-item" href="..\putno\osiguranje_privatne_odgovornosti_uz_putno_zdravstveno_osiguranje.html">Osiguranje privatne odgovornosti uz putno zdravstveno osiguranje</a></li>
+                                        <li><a class="dropdown-item" href="..\putno\croatia_asistencija_uz_putno_zdravstveno_osiguranje.html">Croatia asistencija uz putno zdravstveno osiguranje</a></li>
+                                    </ul>
+                             </li>
+
+              <li><a class="dropdown-item dropdown-toggle" href="#">Plovila i prijevoz</a>
+                                <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="..\plovila_i_prijevoz\osiguranje_odgovornosti_vlasnika_brodice.html">Osiguranje odgovornosti vlasnika/korisnika brodice/jahte</a></li>
+                                        <li><a class="dropdown-item" href="..\plovila_i_prijevoz\kasko_osiguranje_brodica_i_jahti.html">Kasko osiguranje brodica i jahti</a></li>
+                                        <li><a class="dropdown-item" href="..\plovila_i_prijevoz\kasko_osiguranje_broda.html">Kasko osiguranje broda (trup i stroj)</a></li>
+                                        <li><a class="dropdown-item" href="..\plovila_i_prijevoz\osiguranje_zrakoplova.html">Osiguranje zrakoplova</a></li>
+                                        <li><a class="dropdown-item" href="..\plovila_i_prijevoz\osiguranje_odgovornosti_brodopopravljaca.html">Osiguranje odgovornosti brodopopravljača</a></li>
+                                        <li><a class="dropdown-item" href="..\plovila_i_prijevoz\osiguranje_broda_u_gradnji.html">Osiguranje broda u gradnji</a></li>
+                                        <li><a class="dropdown-item" href="..\plovila_i_prijevoz\osiguranje_od_odgovornosti_vlasnika_odnosno korisnika_like_nautickog_turizma.html">Osiguranje od odgovornosti vlasnika odnosno korinika marine/luke nautičkog turizma</a></li>
+                                        <li><a class="dropdown-item" href="..\plovila_i_prijevoz\osiguranje_od_odgovornosti_cestovnog_prijevoznika.html">Osiguranje od odgovornosti cestovnog prijevoznika</a></li>
+                                    </ul>
+                             </li>
+
+              <li><a class="dropdown-item" href="..\bankoosiguranja\bankoosiguranje.html">Bankoosiguranja</a></li>
+              
+              <li><a class="dropdown-item dropdown-toggle" href="#">Paketi</a>
+                                <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="..\paketi\obrtnicki_paket.html">Obrtnički paket</a></li>
+                                        <li><a class="dropdown-item" href="..\paketi\obiteljski_paket.html">Obiteljski paket</a></li>
+                                        <li><a class="dropdown-item" href="..\paketi\poduzetnicki_paket.html">Poduzetnički paket</a></li>
+                                        <li><a class="dropdown-item" href="..\paketi\poljoprivredni_paket.html">Poljoprivredni paket</a></li>
+                                    </ul>
+                             </li>
+
+              <li><a class="dropdown-item" href="..\osiguranje_otplate_kredita\osiguranje_otplate_kredita.html">Osiguranje otplate kredita</a></li>
+
+                            </ul>
+                        </li>
+
+             <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="https://bootstrapthemes.co" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CZO</a>
+                          
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                             <li><a class="dropdown-item" href="..\..\czo\dodatno.html">Dodatno</a></li>
+                             <li><a class="dropdown-item" href="..\..\czo\dopunsko.html">Dopunsko</a></li>
+                             <li><a class="dropdown-item" href="..\..\czo\podrska.html">Podrška</a></li>
+                        </ul>
+             </li>  
+
+              <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="https://bootstrapthemes.co" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Štete</a>
+                          
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                             <li><a class="dropdown-item" href="..\..\stete\prijava_stete_osiguranja_zivota.html">Prijava štete osiguranja života</a></li>
+                             <li><a class="dropdown-item" href="..\..\stete\prijava_stete_autokasko.html">Prijava štete AK</a></li>
+                             <li><a class="dropdown-item" href="..\..\stete\prijava_stete_autoodgovornosti.html">Prijava štete AO</a></li>
+                             <li><a class="dropdown-item" href="..\..\stete\prijava_stete_imovina.html">Prijava štete imovina</a></li>
+                             <li><a class="dropdown-item" href="..\..\stete\ostale_prijave_steta.html">Ostale prijave šteta</a></li>
+                             <li><a class="dropdown-item" href="..\..\stete\status_stete.html">Statusi šteta</a></li>
+                        </ul>
+             </li>
+
+                   <li class="nav-item">
+                        <a class="nav-link" href="..\..\dmf\dmf.html">DMF</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="..\..\financije\financije.html">Financije</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="..\..\prigovori\prigovori.html">Prigovori</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="..\..\dp\dp.html">DP</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="..\..\webshop\webshop.html">Webshop</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="..\..\facebook\facebook.html">Facebook</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="..\..\mailovi\mailovi.html">Mailovi</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="..\..\eskalacije\eskalacije.html">Eskalacije</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="..\..\azuriranje\azuriranje_baze_klijenata.html">Ažuriranje baze klijenata</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="..\..\kontakti\kontakti.html">Kontakti</a>
+                    </li>
+
+                </ul>
+        </div>
+    </nav>
+    <!--Navbar - end -->
+
+
+<div class="container">
+    <main role="main" class="container">
+
+      <div class="row row-offcanvas row-offcanvas-right">
+
+        <div class="col-12 col-md-9">
+
+          <div class="row">
+            <div class="col-11 col-lg-11">
+              <h2>Osnovne informacije</h2><a href="http://www.crosig.hr/hr/osiguranja/zivotno/mjesovito-osiguranje-za-slucaj-smrti-i-dozivljenja/" target="_blank">@crosig.hr</a>
+              <ul>
+                <li><b>402, 414,428, 519,… Mješovito osiguranje za slučaj smrti i doživljenja</b> Osiguranje za sluĉaj smrti uslijed bolesti i nezgode (štednja i osiguranje života)
+                </li>
+                <li>Pristupna dob: od 14. do 65. godine (dostupno i starijim ali iskljuĉivo uz lijeĉniĉki pregled)</li>
+                <li>Minimalno trajanje police je 10 godina, a maksimalno 30 godina</li>
+                <li>Polica ima štednu komponentu</li>
+                <li>Moguće je napraviti prijevremeni otkup police:</li>
+                <ul>
+                  <li>Za police s trajanjem osiguranja do 14 godina – moguće je napraviti otkup nakon 2 godine</li>
+                  <li>Za police s trajanjem osiguranja 15 i više godina – moguće je napraviti otkup nakon 3 godine</li>
+                </ul>
+                <li>Minimalna godišnja premija je 180 eura (cca 16-17 eura mjeseĉno)</li>
+                <li>Mogućnost dobivanja zajma, Uvjeti</li>
+                <li>Darivanje novĉanih sredstava majci u sluĉaju rođenja djeteta</li>
+                <li>Sudjelovanje u pripisanoj dobiti DOS</li>
+                <li>6 mjeseci je priĉekni rok za plaćanje, nakon toga se pokreće postupak storniranja police</li>
+                <br>
+              <h4>Opcije uz proizvod</h4>
+                <br>
+              <table class="table table-sm">
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td><a class="nav-link" href="dopunsko_osiguranje_malignih_bolesti.html">Dopunsko osiguranje malignih bolesti</a></td>
+                        <td><a class="nav-link" href="http://www.crosig.hr/hr/osiguranja/zivotno/dopunsko-osiguranje-malignih-bolesti/" target="_blank">@crosig.hr</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td><a class="nav-link" href="dopunsko_osiguranje_teško_bolesnih_stanja.html">Dopunsko osiguranje teško bolesnih stanja</a></td>
+                        <td><a class="nav-link" href="http://www.crosig.hr/hr/osiguranja/zivotno/dopunsko-osiguranje-tesko-bolesnih-stanja/" target="_blank">@crosig.hr</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td><a class="nav-link" href="dopunsko_osiguranje_osoba_od_posljedica_nesretnog_slucaja.html">Dopunsko osiguranje osoba od posljedica nesretnog slučaja</a></td>
+                        <td><a class="nav-link" href="http://www.crosig.hr/hr/osiguranja/zivotno/dopunsko-osiguranje-osoba-od-posljedica-nesretnog-/" target="_blank">@crosig.hr</a></td>
+                      </tr>
+                    </tbody>
+              </table>
+
+            </div><!--/span-->
+          </div><!--/row-->
+        </div><!--/span-->
+
+        <div class="col-11 col-md-3 sidebar-offcanvas" id="sidebar">
+          <div class="list-group">
+            <a href="#headingOne" class="list-group-item active">Česti upiti</a>
+            <a href="#headingOne" class="list-group-item">Statusi police</a>
+            <a href="#headingThree" class="list-group-item">Otkup police</a>
+            <a href="#headingThree" class="list-group-item">Prijava osiguranog slučaja</a>
+            <a href="#headingFour" class="list-group-item">Klijent nije dobio uplatnicu na adresu</a>
+            <a href="#headingFive" class="list-group-item">Provjera dugovanja</a>
+            <a href="#headingSix" class="list-group-item">Klijent želi stornirati policu</a>
+            <a href="#headingSeven" class="list-group-item">Klijent želi nastaviti plaćati policu koja je trenutno stornirana</a>
+            <a href="#headingEight" class="list-group-item">Zajam</a>
+            <a href="#headingNine" class="list-group-item">Klijentu je istekla polica i želi pokrenuti isplatu</a>
+            <a href="#headingTen" class="list-group-item">DOS</a>
+            <a href="#headingEleven" class="list-group-item">Klijent komunicira da je izgubio policu</a>
+            <a href="#headingTwelve" class="list-group-item">Promjene po polici</a>
+            <a href="#headingThirteen" class="list-group-item">Način plaćanja</a>
+            <a href="#headingFourteen" class="list-group-item">Stranka želi ostvariti pravo za naknadu za rođenje djeteta.</a>
+            <a href="#headingFifteen" class="list-group-item">Kapitalizacija</a>
+            <a href="#headingSixteen" class="list-group-item">Vinkulacija</a>
+          </div>
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+      <h2>Česti upiti</h2>
+    <br>
+
+
+  <!-- Accordion -->
+      <div id="accordion" role="tablist">
+        <div class="card">
+          <div class="card-header" role="tab" id="headingOne">
+            <h5 class="mb-0">
+              <a data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="true" aria-controls="collapseOne">
+                Statusi police
+              </a>
+            </h5>
+          </div>
+          <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              <ul>
+                <li>Polica osiguranja života moče imati slijedeće statuse, a vidljivi su u aplikaciji ISŽO:</li>
+                <ul>
+                  <li>Aktivna - A</li>
+                  <li>Stornirana - kapitalizirana S2</li>
+                  <li>Stornirana – radi neplaćanja premije bez uvjeta kapitalizacije - S1</li>
+                  <li>Stornirana – ništavna – S0</li>
+                  <li>Stornirana – otkup – S4</li>
+                  <li>Stornirana radi osiguranog sluĉaja smrti – S5</li>
+                  <li>Istek police – S7</li>
+                </ul>
+              </ul>
+              <img src="..\..\img\statusi_police.png" alt="">
+            </div>
+                <li>Sve promjene po polici su vidljive u tabu DOS</li>
+              <img src="..\..\img\promjene_po_polici.png" alt="">
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" role="tab" id="headingTwo">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                Otkup police
+              </a>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+             <ul>
+                <li>Preduvjeti koji trebaju biti zadovoljeni kako bi klijent mogao tražiti otkup police:</li>
+                <ul>
+                  <li>premija plaćena za tri godine</li>
+                </ul>
+              </ul>
+              <ul>
+                <li>Dokumentacija potrebna za otkup police:</li>
+                <ul>
+                  <li>izvornik police osiguranja života</li>
+                  <li>presliku osobne iskaznice/preslike osobnih iskaznica kod uzajamnog osiguranja</li>
+                  <li>presliku kartice bankovnog računa na koji će se izvršiti isplata</li>
+                  <li>ukoliko zahtjev podnosi ugovaratelj koji nije ujedno i osiguranik, tada zahtjev moraju potpisati i ugovaratelj osiguranja i osiguranik. ukoliko se radi o uzajamnom osiguranju, tada Zahtjev moraju potpisati i ugovaratelj osiguranja i oba osiguranika.</li>
+                  <li>ako je ugovaratelj osiguranja pravna osoba tada je na Zahtjevu uz potpis odgovorne osobe obvezan i pečat firme.</li>
+                  <li>potvrdu o devinkulaciji police ukoliko je polica bila vinkulirana</li>
+                  <li>ukoliko je polica izgubljena: objava gubitka police u službenom listu RH i tiskanica Prijava nestanka police životnog osiguranja</li>
+                </ul>
+              </ul>
+              <ul>
+                <li>Zahtjev se predaje/šalje:</li>
+                <ul>
+                  <li>preporučeno poštom na adresu</li>
+                  <li>odlazak na mjesto za prijavu</li>
+                </ul>
+                <li>Isplata se vrši nakon zaprimanja cijelokupne dokumentacije u roku od 2 tjedna</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" role="tab" id="headingThree">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree">
+                Prijava osiguranog slučaja
+              </a>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+             <ul>
+                <li>Opis:</li>
+                <ul>
+                  <li>Klijent želi prijaviti osigurani slučaj: smrt</li>
+                </ul>
+              </ul>
+              <ul>
+                <li>Način prijave:</li>
+                <ul>
+                  <li>putem e-mail adrese:  zg.prijavastete@crosig.hr</li>
+                  <li>osobno na ovlaštenom mjestu gdje je moguće izvršiti Prijavu štete</li>
+                  <li>putem online obrasca</li>
+                  <li>putem pošte na adresu: Croatia osiguranje d.d. Zagreb,  Ivice Drmića 3, 10000Zagreb, Sektor za upravljanje naknadama šteta</li>
+                </ul>
+              </ul>
+              <ul>
+                <li>Potrebna dokumentacija:</li>
+                <ul>
+                  <li>izvornik police osiguranja života</li>
+                  <li>presliku osobne iskaznice</li>
+                  <li>presliku kartice tekućeg računa</li>
+                  <li>medicinsku dokumentaciju koju posjeduje</li>
+                  <li>druge dokaze potrebne za dokazivanje prava na isplatu (npr. Zapisnik o oĉevidu, alkotest, punomoć…)</li>
+                </ul>
+              </ul>
+              <ul>
+                <li>Za sluĉaj smrti potrebno je još: </li>
+                <ul>
+                  <li>izvadak iz matice umrlih ili neku drugu odgovarajuću ispravu koja dokazuje smrt osiguranika</li>
+                  <li>dokaz uzroka smrti </li>
+                  <li>potvrdu lijeĉnika koji je zadnji lijeĉio umrloga (lijeĉniĉko izviješće o smrti)</li>
+                  <li>rješenje o nasljeđivanju, ako su kao korisnici policom određeni zakonski nasljednici </li>
+                  <li>dokaz o srodstvu, ako korisnik nije određen imenom</li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" role="tab" id="headingFour">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" href="#collapseFour" role="button" aria-expanded="false" aria-controls="collapseFour">
+                Klijent nije dobio uplatnicu na adresu
+              </a>
+            </h5>
+          </div>
+          <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion">
+            <div class="card-body">
+             <ul>
+                <li>Opis:</li>
+                <ul>
+                  <li>Klijent nije dobio uplatnicu, trači da mu se dostavi na adresu.</li>
+                </ul>
+              </ul>
+              <ul>
+                <li>Uputa agentu:</li>
+                <ul>
+                  <li>Agent kreira zadatak kroz aplikaciju ISŽO da se klijentu pošalje uplatnica na adresu (Upute). Uplatnice se šalju klijentima na adresu idući radni dan, a slanje uplatnica na e-mail adresu nije moguće (agent moče dati podatke za uplatu IBAN, poziv na broj primatelja – broj police, i iznos dugovanja)</li>
+                  <img src="..\..\img\zivot_uplatnica.png" alt="zivot uplatnica">
+                </ul>
+              </ul>
+              <ul>
+                <li>Napomena:</li>
+                <ul>
+                  <li>Uplatnice za sve police životnog osiguranja se kreiraju 15. u mjesecu, a 17. se šalju na adrese klijenata. Dospijeće plaćanja je prvi dan u idućem mjesecu (npr. uplatnica kreirana 15.10. ; poslana 17.10. ; dospijeće plaćanja 01.11.)</li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" role="tab" id="headingFive">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" href="#collapseFive" role="button" aria-expanded="false" aria-controls="collapseFive">
+                Provjera dugovanja
+              </a>
+            </h5>
+          </div>
+          <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive" data-parent="#accordion">
+            <div class="card-body">
+             <ul>
+                <li>Opis:</li>
+                <ul>
+                  <li>Klijent traži provjeru dugovanja.</li>
+                </ul>
+              </ul>
+              <ul>
+                <li>Uputa agentu:</li>
+                <ul>
+                  <li>Agent u aplikaciji ISŽO, tab Naplata, dobiva prikaz dugovanja (za detaljni prikaz dugovanja, Analitika premije; Pregledi; Pregled rate od interesa)</li>
+                  <li> Prikaz svih uplata po polici: Naplata; Obrada uplata – otvara se popis uplata u Word doc.</li>
+                </ul>
+              </ul>
+              <ul>
+                <li>Klijent tvrdi da nismo proknjičili sve uplate:</li>
+                <ul>
+                  <li>Klijenta tražiti datum i iznos uplate, te provjeriti u Popisu uplata da li je uplata proknjižena</li>
+                  <li>Ukoliko uplata nije proknjižena, klijenta tražiti da dostavi prijepis uplate na info@crosig.hr , i da u napomenu stavi ime agenta koji je obrađuje upit</li>
+                  <li>Potvrdu o uplati poslati kao CPM predmet u grupu život naplata, na provjeru knjiženja</li>
+                </ul>
+              </ul>
+              <ul>
+                <li>Napomena:</li>
+                <ul>
+                  <li>Ako se klijent žali da stalno dobiva uplatnice sa duplim iznosom rate, obavijestiti ga da se životno osiguranje plaća unaprijed, tj. rata treba biti do prvog radnog dana u mjesecu, obzirom da se 15. u mjesecu već kreiraju uplatnice za idući mjesec</li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" role="tab" id="headingSix">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" href="#collapseSix" role="button" aria-expanded="false" aria-controls="collapseSix">
+                Klijent želi stornirati policu
+              </a>
+            </h5>
+          </div>
+          <div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingSix" data-parent="#accordion">
+            <div class="card-body">
+              <li>Prestankom plaćanja polica ulazi u status storno poslije 6 mj</li>
+              <li>Klijenta uputiti u prodajno mjesto gdje je polica ugovorena (tamo će dati izjavu i obavezno treba predati original policu), ili može poslati poštom original policu + izjavu (Izjava mora sadržati izjavnu reĉenicu  „da se želi prekinuti osiguranje odnosno ne žele plaćati premiju osiguranja“; ime i prezime ugovaratelja i vlastoruĉni potpis)</li>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" role="tab" id="headingSeven">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" href="#collapseSeven" role="button" aria-expanded="false" aria-controls="collapseSeven">
+                Klijent želi nastaviti plaćati policu koja je trenutno stornirana
+              </a>
+            </h5>
+          </div>
+          <div id="collapseSeven" class="collapse" role="tabpanel" aria-labelledby="headingSeven" data-parent="#accordion">
+            <div class="card-body">
+              <li> Može se obnoviti na pisani zahtjev ugovaratelja, a najkasnije u roku od 12 mjeseci od isteka mjeseca za koji je plaćena posljednja premija, a ukoliko se klijentu odobri obnova police morati će podmiriti zaostala dugovanja, te će se također obraĉunati i zatezna kamata.</li>
+              <li>Klijent se treba javiti u Poslovnicu i ispuniti Zahtjev za obnovom osiguranja</li>
+              <li>Putem maila je ju je također moguće obnoviti</li>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+                <div class="card-header" role="tab" id="headingEight">
+                  <h5 class="mb-0">
+                    <a class="collapsed" data-toggle="collapse" href="#collapseEight" role="button" aria-expanded="false" aria-controls="collapseEight">
+                      Zajam
+                    </a>
+                  </h5>
+                </div>
+                <div id="collapseEight" class="collapse" role="tabpanel" aria-labelledby="headingEight" data-parent="#accordion">
+                  <div class="card-body">
+                   <ul>
+                      <li>PREDUVJETI ZA ODOBRAVANJE ZAJMA: </li>
+                      <ul>
+                        <li>Polica mora biti aktivna</li>
+                        <li>Polica ne smije biti već vinkulirana u korist treće osobe</li>
+                        <li>Mora biti zadovoljen uvjet za otkup osiguranja (za police s trajanjem osiguranja do 14 godina – premija plaćena za dvije godine, za police s trajanjem osiguranja 15 i više godina – premija plaćena za tri godine )</li>
+                      </ul>
+                  </ul>
+                  <ul>
+                      <li>UVJETI KORIŠTENJA ZAJAMA: </li>
+                      <ul>
+                        <li>Iznos zajama ne može biti veći od otkupne vrijednosti police</li>
+                        <li>Kamatna stopa je promjenjiva i trenutno iznosi 7% godišnje</li>
+                        <li>Iznos zajma ne može biti manji od 500,00 eura, a minimalni iznos mjeseĉnog anuiteta ne može biti manji od 50,00 eura</li>
+                        <li>Ako se plaća u mjeseĉnim anuitetima - zajam se može odobriti na rok do maksimalno 5 godina ali ne duže od isteka police</li>
+                        <li>Plaćati se može kvartalno i polugodišnje, a može se platiti jednokratno uz priĉekni rok od 1 godinu</li>
+                      </ul>
+                  </ul>
+                  <ul>
+                      <li>DOKUMENTACIJA POTREBNA ZA OBRADU ZAJMA: </li>
+                      <ul>
+                        <li>Original police osiguranja života</li>
+                        <li>Preslika osobne iskaznice</li>
+                        <li>Preslika kartice tekućeg raĉuna</li>
+                      </ul>
+                  </ul>
+                  <li>Zahtjev se predaje u poslovnici CO, u Zagrebu – poslovnica na Trg bana J. Jelaĉića, ostali gradovi u najbližoj poslovnici</li>
+                  <li>Isplata se vrši nakon zaprimanja cijelokupne dokumentacije, u roku od 2 tjedna</li>
+                  <li>Upite za postojeće zajmove (preostali iznos za uplatu, podaci za plaćanje…) poslati upit na grupu zajmovi@crosig.hr</li>
+                  </div>
+                </div>
+              </div>
+
+
+        <div class="card">
+          <div class="card-header" role="tab" id="headingNine">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" href="#collapseNine" role="button" aria-expanded="false" aria-controls="collapseNine">
+                Klijentu je istekla polica i želi pokrenuti isplatu
+              </a>
+            </h5>
+          </div>
+          <div id="collapseNine" class="collapse" role="tabpanel" aria-labelledby="headingNine" data-parent="#accordion">
+            <div class="card-body">
+              <ul>
+                <li>Način prijave:</li>
+                <ul>
+                  <li>1. stranka može doći osobno u Poslovnicu s pripadajućom dokumentacijom:</li>
+                  <li>2. preporučeno poštom na adresu</li>
+                </ul>
+              </ul>
+              <ul>
+                <li>Potrebna dokumentacija:</li>
+                <ul>
+                  <li>Zahtjev za isplatom police po isteku (zahtjev klijent dobiva u Poslovnici)</li>
+                  <li>Preslika kartice tekućeg računa</li>
+                  <li>Preslika osobne iskaznice</li>
+                  <li>Original polic</li>
+                </ul>
+              </ul>
+               <ul>
+                <li>Uputa agentu:</li>
+                <ul>
+                  <li>Dva tjedna prije isteka police Croatia osiguranje šalje stranci podsjetnik o isteku police u kojem stoji sve što stranka mora poduzeti kako bi došlo do isplate.</li>
+                  <li>Rok za isplatom je dva do tri tjedna od dana isteka police, ovisno o tome da li je korištena porezna olakšica po polici koja se mogla koristiti do 2010.godine.</li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" role="tab" id="headingTen">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" href="#collapseTen" role="button" aria-expanded="false" aria-controls="collapseTen">
+                DOS
+              </a>
+            </h5>
+          </div>
+          <div id="collapseTen" class="collapse" role="tabpanel" aria-labelledby="headingTen" data-parent="#accordion">
+            <div class="card-body">
+              <ul>
+                <li>Opis:</li>
+                <ul>
+                  <li>DOS –  je pripisana dobit koju dobivaju klijenti koji imaju ugovorenu policu osiguranja čivota, a visina iznosa ovisi o poslovanju društva CO. (iznos nije zajamĉen, ovisi o dobiti društva CO). Iznos DOS-a vidljiv je u aplikaciji ISŽO.</li>
+                </ul>
+              </ul>
+              <img src="..\..\img\dos.png" alt="">
+              <ul>
+                <li>Upute:</li>
+                <ul>
+                  <li>1. 879,44 eura (6.594,21 kn) - ukupna pripisana dobit</li>
+                  <li>2. 11,55 eura (88,49 kn) - pripisana dobit za zadnju godinu (na primjeru gore je za 2014. godinu)</li>
+                  <li>3. 867,89 eura (6.505,72 kn) – ukupan iznos pripisane dobiti prethodne godine</li>
+                  <li>4. Pregled DOS-a prethodne godine: pozicionirati se na Godina pripisa DOS-a: - F7 – upisati tračenu godinu - F8</li>
+                </ul>
+              </ul>
+               <ul>
+                <li>Uputa agentu:</li>
+                <ul>
+                  <li>Udjeli u dobiti obraĉunavaju se na dan 31.prosinac svake godine, uz uvjet da je premija plaćena</li>
+                  <li>Ugovaratelj se o DOS-u izvješćuje godišnje, sredinom iduće godine (dopis se šalje na adresu klijenta), uz uvjet da je protekao rok od 24 mjeseca od poĉetka osiguranja, i da je osiguravatelj donio odluku o pripisivanju dobiti</li>
+                  <li>Kapitalizacijom police stranka nema pravo na pripisanu dobit</li>
+                  <li>Pripisana dobit se isplaćuje osiguraniku pri isteku osiguranja zajedno s osiguranom svotom</li>
+                  <li>Za police po Posebnom cjeniku – BASIC, EXCLUSIVE, PREMIUM, u sluĉaju prijevremenog otkupa isplaćuje se dobit ukoliko je prošlo više od pola osigurateljnog razdoblja</li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+         <div class="card">
+                <div class="card-header" role="tab" id="headingEleven">
+                  <h5 class="mb-0">
+                    <a class="collapsed" data-toggle="collapse" href="#collapseEleven" role="button" aria-expanded="false" aria-controls="collapseEleven">
+                      Klijent komunicira da je izgubio policu.
+                    </a>
+                  </h5>
+                </div>
+                <div id="collapseEleven" class="collapse" role="tabpanel" aria-labelledby="headingEleven" data-parent="#accordion">
+                  <div class="card-body">
+                    <ul>
+                      <li>Opis:</li>
+                      <ul>
+                        <li>1. Prvo provjeriti da li je polica Vinkulirana, ako je vinkulirana onda se nalazi u banci/CO</li>
+                        <li>2. Ukoliko polica nije vinkulirana a klijent je uvjeren da je izgubio policu, obavijestiti ga da je dužan prijaviti gubitak police u Narodnim novinama (obzirom da je polica osiguranja vrijednosni dokument)</li>
+                        <ul>
+                          <li>Nakon što klijent oglasi nestanak police u NN, dobiti će potvrdu/raĉun o istom, te ukoliko želi duplikat police, treba sa tim raĉunom doći u Podružnicu, gdje će ispuniti obrazac (Prijava izgubljene police) i uplatiti 30 kn, zatražiti tiskanje duplikata</li>
+                          <li>15 dana od dana objave nestanka police u NN, CO izdaje zamjensku policu</li>
+                        </ul>
+                        <li>Ako klijent želi otkupiti policu, tad nije potrebno tiskati duplikat (niti plaćati 30 kn), dovoljno je priložiti potvrdu/raĉun iz NN i potpisati naš obrazac prijave gubitka, te podnijeti zahtjev za otkup.</li>
+                      </ul>
+                    </ul>
+                    <ul>
+                      <li>Napomena:</li>
+                      <ul>
+                        <li>Ugovaratelj snosi sve troškove vezane uz izdavanje zamjenske police.</li>
+                      </ul>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" role="tab" id="headingTwelve">
+                  <h5 class="mb-0">
+                    <a class="collapsed" data-toggle="collapse" href="#collapseTwelve" role="button" aria-expanded="false" aria-controls="collapseTwelve">
+                      Promjene po polici
+                    </a>
+                  </h5>
+                </div>
+                <div id="collapseTwelve" class="collapse" role="tabpanel" aria-labelledby="headingTwelve" data-parent="#accordion">
+                  <div class="card-body">
+                   #
+                  </div>
+                </div>
+              </div>
+     
+              <div class="card">
+                <div class="card-header" role="tab" id="headingThirteen">
+                  <h5 class="mb-0">
+                    <a class="collapsed" data-toggle="collapse" href="#collapseThirteen" role="button" aria-expanded="false" aria-controls="collapseThirteen">
+                      Način plaćanja
+                    </a>
+                  </h5>
+                </div>
+                <div id="collapseThirteen" class="collapse" role="tabpanel" aria-labelledby="headingThirteen" data-parent="#accordion">
+                  <div class="card-body">
+                   <ul>
+                      <li><b>Uplatnica</b> -  klijentu se šalju uplatnice na kućnu adresu (17. u mjesecu)</li>
+                      <li><b>Trajni nalog</b> -  klijent ugovora trajni nalog u banci, te ukoliko ne želi da mu se šalju uplatnice potrebno je da dostavi ugovor o trajnom nalogu na info@crosig.hr i napiše „da želi obustavu slanja uplatnica jer ima ugovoren TN“</li>
+                      <li><b>Ustega od plaće</b> - dopise o poĉetku ili prekidu ustega šaljemo samo na zahtjev klijenta/pribavitelja, listu ustega šaljemo svaki mjesec u firmu u kojoj ugovaratelj police radi a na listi se specificira koliko se treba ustegnuti od plaće</li>
+                  </ul>
+                  <img src="..\..\img\nacin_placanja.png" alt="nacin placanja">
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" role="tab" id="headingFourteen">
+                  <h5 class="mb-0">
+                    <a class="collapsed" data-toggle="collapse" href="#collapseFourteen" role="button" aria-expanded="false" aria-controls="collapseFourteen">
+                      Stranka želi ostvariti pravo za naknadu za rođenje djeteta.
+                    </a>
+                  </h5>
+                </div>
+                <div id="collapseFourteen" class="collapse" role="tabpanel" aria-labelledby="headingFourteen" data-parent="#accordion">
+                  <div class="card-body">
+                    <ul>
+                      <li>Preduvjet:</li>
+                        <ul>
+                          <li>Pravo na isplatu naknade za rođenje djeteta imaju isključivo majke koje su ugovaratelj i osiguranik police osiguranja života. Osiguravatelj isplaćuje majci djeteta, osiguranoj individualnom ili uzajamnom policom, naknadu za opremu djeteta u visini od 2,5% od osigurane svote za doživljenje, pod uvjetom da je dijete rođeno poslije šest mjeseci trajanja osiguranja.</li>
+                        </ul>
+                    </ul>
+                    <ul>
+                      <li>Način prijave:</li>
+                        <ul>
+                          <li>PPutem e-mail adrese na zg.prijavastete@crosig.hr , također se može direktno poslati mail kolegi Kovarbašiću - vladimir.kovarbasic@crosig.hr   ili kolegici Tomašević - drenka.tomasevic@crosig.hr</li>
+                          <li>osobni dolazak u Ivice Drmića 3 (ukoliko se radi o zagrebaĉkoj adresi stranke)</li>
+                          <li>putem pošte na: Croatia osiguranje d.d. Zagreb, Ivice Drmića 3,  Sektor za upravljanje naknadama šteta, n/r Vladimir Kovarbašić</li>
+                        </ul>
+                    </ul>
+                    <ul>
+                      <li>Potrebna dokumentacija za ostvarivanje naknade:</li>
+                        <ul>
+                          <li>Rodni list djeteta</li>
+                          <li>Osobnu iskaznicu</li>
+                          <li>Kopiju bankovnog raĉuna</li>
+                          <li>Policu OŽ (iako ćemo priznati i samo broj police ako nema sa sobom)</li>
+                          <li>Ispunjen zahtjev Prijava za rođenje djeteta</li><a href="http://www.crosig.hr/hr/stete/prijava-stete-osiguranja-zivota/"  title="" target="_blank">obrazac</a>
+                        </ul>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" role="tab" id="headingFifteen">
+                  <h5 class="mb-0">
+                    <a class="collapsed" data-toggle="collapse" href="#collapseFifteen" role="button" aria-expanded="false" aria-controls="collapseFifteen">
+                      Kapitalizacija
+                    </a>
+                  </h5>
+                </div>
+                <div id="collapseFifteen" class="collapse" role="tabpanel" aria-labelledby="headingFifteen" data-parent="#accordion">
+                  <div class="card-body">
+                  <li>Kapitalizacija je smanjenje osigurane svote na iznos otkupne vrijednosti police osiguranja,  odnosno uglavniĉenje (zamrzavanje) štednog dijela premije osiguranja.</li>
+                  <li>Kapitalizacijom prestaju vrijediti dopunska osiguranja (dopunska nezgoda i TBS). Kapitalizacija se provodi temeljem zahtjeva ugovaratelja. Automatska kapitalizacija provodi se po isteku 6 mjeseci od datuma plaćenosti rate premije. Obnova police moguća je unutar godine dana. Ukoliko klijent želi obnoviti ugovor, a polica je kapitalizirana može se obnoviti ako su do dana obnove plaćene sve dospjele premije za život i pripadajuće zatezne kamate, te ukoliko je klijent osigurateljno prihvatljiv – a tiĉe se zdravstvenog stanja. Izvan regularnog roka od 12 mjeseci postoji mogućnost obnove van uvjeta ukoliko stranka podnese zahtjev i to odobrava Odgovorna osoba u Sektoru za upravljanje osigurateljnim portfeljem. </li>
+                  <li>Kapitalizacijom police klijent je saĉuvao dosadašnje uplate i dalje je osigurana do isteka ugovorenog roka.</li>
+                  <li>Uprava Društva svake godine donosi odluku o pripisu dobiti po policama osiguranja života. U zadnjih par godina, nije se pripisivao DOS po kapitaliziranim policama, ali to nikako ne znaĉi da u budućnosti možda i neće. Kapitalizacijom police klijent nema pravo na pripisanu dobit. Ukoliko kapitalizirana polica traje do ugovorenog isteka stranci se isplaćuje kapitalizirana svota plus pripisana dobit do kapitalizacije.</li>
+                  <li>Isplata kapitalizirane police prije isteka ugovorenog roka trajanja osiguranja moguća je samo u sluĉaju smrti osiguranika ili otkupa police. </li>
+                  </div>
+                </div>
+              </div>
+
+               <div class="card">
+                <div class="card-header" role="tab" id="headingSixteen">
+                  <h5 class="mb-0">
+                    <a class="collapsed" data-toggle="collapse" href="#collapseSixteen" role="button" aria-expanded="false" aria-controls="collapseSixteen">
+                      Vinkulacija
+                    </a>
+                  </h5>
+                </div>
+                <div id="collapseSixteen" class="collapse" role="tabpanel" aria-labelledby="headingSixteen" data-parent="#accordion">
+                  <div class="card-body">
+                  <ul>
+                    <li>Klijenta zanima da li je polica vinkulirana</li>
+                    <ul>
+                      <li>U aplikaciji ISŽO u polju Stat je vidljivo da li je polica vinkulirana; u polju Vinkulator je vidljivo u ĉiju korist je vinkulirana</li>
+                    </ul>
+                  </ul>
+                  <img src="..\..\img\vinkulacija.png" alt="vinkulacija">
+                  <ul>
+                    <li>Police vinkulirane u korist banke/CO</li>
+                    <ul>
+                      <li>original police se nalazi u banci/CO</li>
+                      <li>promjene po polici nisu moguće bez suglasnosti banke</li>
+                      <li>otkup i zajam nije moguć</li>
+                      <li>nakon otplate kredita banka šalje izjavu o devinkulaciji u CO a policu vraća klijentu (tada može raditi sve promjene, otkup i zajam po polici)</li>
+                    </ul>
+                  </ul>
+                  </div>
+                </div>
+              </div>
+
+              
+      </div>
+<!-- /Accordion -->
+
+    </main><!--/.container-->
+
+    <hr>
+    <footer class="footer">
+      <p>&copy; <a href="mailto:Stjepan.Mudronja@crosig.hr">Stjepan Mudronja</p>
+    </footer>
+    
+</div>
+  
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  <script src="..\..\js/bootstrap-4-navbar.js"></script>
+</body>
+</html>

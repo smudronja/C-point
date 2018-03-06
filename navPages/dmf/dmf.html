@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>C-point</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="..\..\css\style.css">
+  
+</head>
+<body>
+
+    <!-- Navbar - start -->
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="..\..\index.php">C-point</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="https://bootstrapthemes.co" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Osiguranja</a>
+                          
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+                            <li><a class="dropdown-item dropdown-toggle" href="#">Vozila</a>
+                                <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="..\osiguranja\vozila\autoodgovornost.html">Autoodgovornost</a></li>
+                                        <li><a class="dropdown-item" href="..\osiguranja\vozila\AOplus.html">AO plus</a></li>
+                                        <li><a class="dropdown-item" href="..\osiguranja\vozila\zastitaCObonusa.html">Zaštita CO bonusa</a></li>
+                                        <li><a class="dropdown-item" href="..\osiguranja\vozila\provala.html">Provala</a></li>
+                                        <li><a class="dropdown-item" href="..\osiguranja\vozila\AOvuca.html">AO vuča</a></li>
+                                        <li><a class="dropdown-item" href="..\osiguranja\vozila\osiguranje_od_autonezgode.html">Osiguranje od autonezgode</a></li>
+                                        <li><a class="dropdown-item" href="..\osiguranja\vozila\autokasko.html">Autokasko</a></li>
+                                        <li><a class="dropdown-item" href="..\osiguranja\vozila\croatia_asistencija_i_putni_andeo.html">Croatia asistencija i Putni Anđeo</a></li>
+                                        <li><a class="dropdown-item" href="..\osiguranja\vozila\croatia_premium.html">Croatia Premium</a></li>
+                                    </ul>
+                             </li>
+
+                             <li><a class="dropdown-item dropdown-toggle" href="#">Životno</a>
+                                <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="..\osiguranja\zivotno\croatia_stipendija.html">Croatia stipendija-osobna renta s određenim trajanjem</a></li>
+                                        <li><a class="dropdown-item" href="..\osiguranja\zivotno\dopunsko_osiguranje_malignih_bolesti.html">Dopunsko osiguranje malignih bolesti</a></li>
+                                        <li><a class="dropdown-item" href="..\osiguranja\zivotno\dopunsko_osiguranje_djece_od_posljedica_nesretnog_slučaja.html">Dopunsko osiguranje djece od posljedica nesretnog slučaja</a></li>
+                                        <li><a class="dropdown-item" href="..\osiguranja\zivotno\krug_zivota.html">Krug života-doživotno osiguranje za slučaj smrti</a></li>
+                                        <li><a class="dropdown-item" href="..\osiguranja\zivotno\mjesovito osiguranje_za_slucaj_smrti_i_dozivljenja.html">Mješovito osiguranje za slučaj smrti i doživljenja</a></li>
+                                        <li><a class="dropdown-item" href="..\osiguranja\zivotno\stedno_osiguranje_djece.html">Štedno osiguranje djece</a></li>
+                                        <li><a class="dropdown-item" href="..\osiguranja\zivotno\riziko_plus.html">Riziko PLUS-osiguranje za slučaj smrti</a></li>
+                                        <li><a class="dropdown-item" href="..\osiguranja\zivotno\kolektivno_osiguranje_zivota_slucaj_smrt_i_dozivljenja.html">Kolektivno osiguranje života za slučaj smrti i doživljenja</a></li>
+                                    </ul>
+                             </li>
+
+                             <li><a class="dropdown-item dropdown-toggle" href="#">Imovina</a>
+                                <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="..\osiguranja\imovina\croatia_imovina.html">Croatia osiguranja\imovina</a></li>
+                                        <li><a class="dropdown-item" href="..\osiguranja\imovina\osiguranje_turistickih_apartmana-turist_plus.html">Osiguranje turističkih apartmana-Turist plus</a></li>
+                                        <li><a class="dropdown-item" href="..\osiguranja\imovina\osiguranje_od_provale_krade_i_razbojstva.html">Osiguranje od provale krađe i razbojstva</a></li>
+                                        <li><a class="dropdown-item" href="..\osiguranja\imovina\osiguranje_od_požara.html">Osiguranje od požara</a></li>
+                                        <li><a class="dropdown-item" href="..\osiguranja\imovina\osiguranje_kucnih_ljubimaca.html">Osiguranje kućnih ljubimaca</a></li>
+                                        <li><a class="dropdown-item" href="..\osiguranja\imovina\osiguranje_od_potresa.html">Osiguranje od potresa</a></li>
+                                        <li><a class="dropdown-item" href="..\osiguranja\imovina\osiguranje_usjeva.html">Osiguranje usjeva</a></li>
+                                        <li><a class="dropdown-item" href="..\osiguranja\imovina\osiguranje_stakla_od_loma.html">Osiguranje stakla od loma</a></li>
+                                    </ul>
+                             </li>
+                                
+
+                             <li><a class="dropdown-item dropdown-toggle" href="#">Nezgoda</a>
+                                <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="..\osiguranja\nezgoda\individualno_osiguranje_od_posljedica_nesretnog_slucaja.html">Individualno osiguranje od posljedica nesretnog slučaja</a></li>
+                                        <li><a class="dropdown-item" href="..\osiguranja\nezgoda\osiguranje_zivotnog_standarda.html">Osiguranje životnog standarda</a></li>
+                                        <li><a class="dropdown-item" href="..\osiguranja\nezgoda\kolektivno_osiguranje_od_posljedica_nesretnog_slucaja.html">Kolektivno osiguranje od posljedica nesretnog slučaja</a></li>
+                                        <li><a class="dropdown-item" href="..\osiguranja\nezgoda\osiguranje_menadera.html">Osiguranje menađera</a></li>
+                                        <li><a class="dropdown-item" href="..\osiguranja\nezgoda\osiguranje_djece_ucenika_i_studenata.html">Osiguranje djece, učenika i studenata</a></li>
+                                    </ul>
+                             </li>
+              
+                <li><a class="dropdown-item dropdown-toggle" href="#">Putno</a>
+                                <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="..\osiguranja\putno\putno_zdravstveno_osiguranje.html">Putno zdravstveno osiguranje</a></li>
+                                        <li><a class="dropdown-item" href="..\osiguranja\putno\kasko_auto_put.html">Kasko AUTO PUT</a></li>
+                                        <li><a class="dropdown-item" href="..\osiguranja\putno\osiguranje_otkaza_putovanja.html">Osiguranje otkaza putovanja</a></li>
+                                        <li><a class="dropdown-item" href="..\osiguranja\putno\dodatno_osiguranje_nezgode_uz_putno_zdravstveno_osiguranje.html">Dodatno osiguranje nezgode uz putno zdravstveno osiguranje</a></li>
+                                        <li><a class="dropdown-item" href="..\osiguranja\putno\osiguranje_privatne_odgovornosti_uz_putno_zdravstveno_osiguranje.html">Osiguranje privatne odgovornosti uz putno zdravstveno osiguranje</a></li>
+                                        <li><a class="dropdown-item" href="..\osiguranja\putno\croatia_asistencija_uz_putno_zdravstveno_osiguranje.html">Croatia asistencija uz putno zdravstveno osiguranje</a></li>
+                                    </ul>
+                          </li>
+
+              <li><a class="dropdown-item dropdown-toggle" href="#">Plovila i prijevoz</a>
+                                <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="..\osiguranja\plovila_i_prijevoz\osiguranje_odgovornosti_vlasnika_brodice.html">Osiguranje odgovornosti vlasnika/korisnika brodice/jahte</a></li>
+                                        <li><a class="dropdown-item" href="..\osiguranja\plovila_i_prijevoz\kasko_osiguranje_brodica_i_jahti.html">Kasko osiguranje brodica i jahti</a></li>
+                                        <li><a class="dropdown-item" href="..\osiguranja\plovila_i_prijevoz\kasko_osiguranje_broda.html">Kasko osiguranje broda (trup i stroj)</a></li>
+                                        <li><a class="dropdown-item" href="..\osiguranja\plovila_i_prijevoz\osiguranje_zrakoplova.html">Osiguranje zrakoplova</a></li>
+                                        <li><a class="dropdown-item" href="..\osiguranja\plovila_i_prijevoz\osiguranje_odgovornosti_brodopopravljaca.html">Osiguranje odgovornosti brodopopravljača</a></li>
+                                        <li><a class="dropdown-item" href="..\osiguranja\plovila_i_prijevoz\osiguranje_broda_u_gradnji.html">Osiguranje broda u gradnji</a></li>
+                                        <li><a class="dropdown-item" href="..\osiguranja\plovila_i_prijevoz\osiguranje_od_odgovornosti_vlasnika_odnosno korisnika_like_nautickog_turizma.html">Osiguranje od odgovornosti vlasnika odnosno korinika marine/luke nautičkog turizma</a></li>
+                                        <li><a class="dropdown-item" href="..\osiguranja\plovila_i_prijevoz\osiguranje_od_odgovornosti_cestovnog_prijevoznika.html">Osiguranje od odgovornosti cestovnog prijevoznika</a></li>
+                                    </ul>
+                             </li>
+
+              <li><a class="dropdown-item" href="..\osiguranja\bankoosiguranja\bankoosiguranje.html">Bankoosiguranja</a></li>
+              
+              <li><a class="dropdown-item dropdown-toggle" href="#">Paketi</a>
+                                <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="..\osiguranja\paketi\obrtnicki_paket.html">Obrtnički paket</a></li>
+                                        <li><a class="dropdown-item" href="..\osiguranja\paketi\obiteljski_paket.html">Obiteljski paket</a></li>
+                                        <li><a class="dropdown-item" href="..\osiguranja\paketi\poduzetnicki_paket.html">Poduzetnički paket</a></li>
+                                        <li><a class="dropdown-item" href="..\osiguranja\paketi\poljoprivredni_paket.html">Poljoprivredni paket</a></li>
+                                    </ul>
+                             </li>
+
+              <li><a class="dropdown-item" href="..\osiguranje_otplate_kredita\osiguranje_otplate_kredita.html">Osiguranje otplate kredita</a></li>
+
+                            </ul>
+                        </li>
+
+             <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="https://bootstrapthemes.co" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CZO</a>
+                          
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                             <li><a class="dropdown-item" href="..\czo\dodatno.html">Dodatno</a></li>
+                             <li><a class="dropdown-item" href="..\czo\dopunsko.html">Dopunsko</a></li>
+                             <li><a class="dropdown-item" href="..\czo\podrska.html">Podrška</a></li>
+                        </ul>
+             </li>  
+
+              <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="https://bootstrapthemes.co" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Štete</a>
+                          
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                             <li><a class="dropdown-item" href="..\stete\prijava_stete_osiguranja_zivota.html">Prijava štete osiguranja života</a></li>
+                             <li><a class="dropdown-item" href="..\stete\prijava_stete_autokasko.html">Prijava štete AK</a></li>
+                             <li><a class="dropdown-item" href="..\stete\prijava_stete_autoodgovornosti.html">Prijava štete AO</a></li>
+                             <li><a class="dropdown-item" href="..\stete\prijava_stete_imovina.html">Prijava štete imovina</a></li>
+                             <li><a class="dropdown-item" href="..\stete\ostale_prijave_steta.html">Ostale prijave šteta</a></li>
+                             <li><a class="dropdown-item" href="..\stete\status_stete.html">Statusi šteta</a></li>
+                        </ul>
+             </li>
+
+                   <li class="nav-item">
+                        <a class="nav-link" href="dmf.html">DMF</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="..\financije\financije.html">Financije</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="..\prigovori\prigovori.html">Prigovori</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="..\dp\dp.html">DP</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="..\webshop\webshop.html">Webshop</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="..\facebook\facebook.html">Facebook</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="..\mailovi\mailovi.html">Mailovi</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="..\eskalacije\eskalacije.html">Eskalacije</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="..\azuriranje\azuriranje_baze_klijenata.html">Ažuriranje baze klijenata</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="..\kontakti\kontakti.html">Kontakti</a>
+                    </li>
+
+                </ul>
+        </div>
+    </nav>
+    <!--Navbar - end -->
+
+
+<div class="container">
+    <main role="main" class="container">
+        <div class="row row-offcanvas row-offcanvas-right">
+            <div class="col-12 col-md-9">
+                <div class="row">
+                    <div class="col-11 col-lg-11">
+                        <h2>Osnovne informacije</h2><a href="http://www.crosig-trecistup.hr/" target="_blank">@crosig.hr</a>
+                        <ul>
+                            <li><b>Dobrovoljni mirovinski fondovi</b> oblik je štednje kojem je cilj osigurati sredstva za isplatu dodatne mirovine putem ulaganja u dobrovoljne mirovinske fondove, a namijenjeno je svim osobama bez obzira na ţivotnu dob, zdravstveno stanje te radni ili mirovinski status. Štednja u dobrovoljnom mirovinskom osiguranju ne ovisi o mirovinama iz 1. i 2. stupa, regulativi obveznih mirovina, niti o drţavnom proraĉunu.
+                            </li>
+                            <br>
+                            <ul>
+                              <li>Karakteristike članova u fondu:</li>
+                              <ul>
+                                <li>Dobrovoljna mirovinska štednja je jedini financijski proizvod na hrvatskom trţištu koji donosi tri prednosti od ulaganja: porezne olakšice, drţavna poticajna sredstva te prinos fonda.</li>
+                                <li>Ĉlan bira visinu, trajanje i dinamiku uplata u fond.</li>
+                                <li>Uplate nisu obvezne, ovise o trenutnim mogućnostima uplatitelja, nema opomena.</li>
+                                <li>Prestankom uplaćivanja ili neredovitim uplatama ĉlanstvo u fondu se ne prekida, postojeća sredstva na raĉunu i dalje ostvaruju prinose, nema dodatnih troškova nakon ponovnih uplata.</li>
+                                <li>Sva uplaćena sredstva su osobno vlasništvo ĉlana, bez obzira na to tko je uplatitelj.</li>
+                                <li>Sredstva su u cijelosti nasljedna i tijekom primanja mirovine.</li>
+                                <li>Korištenje mirovine moguće je već od 50-te godine ţivota.</li>
+                                <li>Uplaćivati u fond mogu ĉlanovi osobno, ali i njihovi poslodavci.</li>
+                                <li>Trajanje ĉlanstva nije vremenski ograniĉeno.</li>
+                                <li>Sredstva na osobnom raĉunu ĉlana fonda ne mogu biti predmetom ovrhe, ne mogu se opteretiti, odnosno dati u zalog, niti prenijeti u korist ikoga drugog.</li>
+                              </ul>
+                            </ul>
+                            <li>Croatia osiguranje mirovinsko društvo upravlja sa 4 fonda
+                              <ul>
+                                <li>Otvoreni fond: CROATIA OSIGURANJE dobrovoljni mirovinski fond</li>
+                                <li
+                              </ul>
+                            </li>
+                            <li>detaljnije <a href="http://www.crosig.hr/hr/osiguranja/plovila-prijevoz-i-krediti/osiguranje-od-odgovornosti-cestovnog-prijevoznika/" target="_blank">@crosig.hr</a></li>
+                        </ul>
+            
+                  </div><!--/span-->
+              </div><!--/row-->
+          </div><!--/span-->
+
+          <div class="col-11 col-md-3 sidebar-offcanvas" id="sidebar">
+              <div class="list-group">
+                  <a href="#headingOne" class="list-group-item active">Česti upiti</a>
+                  <a href="#headingOne" class="list-group-item">CROATIA OSIGURANJE dobrovoljni mirovinski fond</a>
+                  <a href="#headingTwo" class="list-group-item">HEP</a>
+                  <a href="#headingThree" class="list-group-item">HAC</a>
+                  <a href="#headingFour" class="list-group-item">Croatia osiguranje d.d. zatvoreni fond</a>
+              </div>
+          </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+      <h2>Česti upiti</h2>
+      <br>
+		<h4>Otvoreni fondovi</h4>
+    <!-- Accordion -->
+      <div id="accordion" role="tablist">
+          <div class="card">
+              <div class="card-header" role="tab" id="headingOne">
+                  <h5 class="mb-0">
+                      <a data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="true" aria-controls="collapseOne">
+                          CROATIA OSIGURANJE dobrovoljni mirovinski fond
+                      </a>
+                  </h5>
+              </div>
+              <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+              		<li>Ĉlanovi fonda mogu biti sve osobe bez obzira na ţivotnu dob, zdravstveno stanje te radni ili mirovinski status</li>
+              		<li>Fond je umjereno konzervativan po politici ulaganja. Ulaţe se oko 80% imovine fonda u nisko riziĉne instrumente ulaganja koji nose preteţno fiksan prinos. Oko 20% imovine ulaţe se u dionice </li>
+              		<li>U posljednjih 5 godina ostvaren prinos iznosio je u prosjeku 4,5% godišnje (podatak na datum 31.12.2015.)</li>
+              		<li>Štednja u otvorenom fondu moţe trajati neograniĉeno</li>
+              		<li>Ĉlanovi fonda imaju pravo na drţavna poticajna sredstva u iznosu 15% od uplata izvršenih u jednoj kalendarskoj godini, do maksimalno 750 kn</li>
+              		<li>Dokumenti fonda su Prospekt, Statut i Kljuĉni podaci koji su odobreni od HANFA-e gdje su opisane sve naknade, investicijska politika, rizici, prinosi fonda, cijena fonda i prava ĉlanova. Redovito se aţuriraju i nalaze na  www.crosig-trecistup.hr</li>
+              		<li>detaljnije <a href="http://www.crosig-trecistup.hr/fondovi/croatia-osiguranje-dobrovoljni-mirovinski-fond/" target="_blank">@crosig.hr</a></li>
+                  </div>
+              </div>
+         </div>
+      </div>
+
+    <!-- /Accordion -->
+
+    <br>
+		<h4>Zatvoreni fondovi</h4>
+    <!-- Accordion -->
+      <div id="accordion" role="tablist">
+          <div class="card">
+              <div class="card-header" role="tab" id="headingTwo">
+                  <h5 class="mb-0">
+                      <a data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="true" aria-controls="collapseTwo">
+                          HEP grupa i Hrvatski operator prijenosnog sustava d.o.o.
+                      </a>
+                  </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+                  <div class="card-body">
+              		<ul>
+              			<li>U fondu mogu štedjeti:</li>
+              				<ol>
+              					<li>Radnici zaposleni kod poslodavca koji je pokrovitelj fonda</li>
+              					<li>Članovi sindikata</li>
+              					<li>Članovi udruga samostalnih, odnosno strukovnih djelatnosti koja je pokrovitelj zatvorenog fonda</li>
+              				</ol>
+              			<li>Poticaji pokrovitelja HEP fonda iznose 25% na osobne uplate do maksimalnog iznosa od 1200 kn godišnje</li>
+              			<li>Ĉlanovi HEP GRUPE ostvaruju pravo i na drţavna poticajna sredstva koja iznose 15% od uplaćenih doprinosa, a najviše do 1200 kn godišnje (Drţavna poticajna sredstva pripisuju se na uplate Pokrovitelja i ĉlana)</li>
+              			<li>Ulazna naknada iznosi 20 kn i naplaćuje se odbitkom od prvih uplata doprinosa u Fond.</li>
+              		</ul>
+                  </div>
+              </div>
+         </div>
+      </div>
+
+      <div id="accordion" role="tablist">
+          <div class="card">
+              <div class="card-header" role="tab" id="headingThree">
+                  <h5 class="mb-0">
+                      <a data-toggle="collapse" href="#collapseThree" role="button" aria-expanded="true" aria-controls="collapseThree">
+                          Hrvatske autoceste održavanje i naplata cestarine d.o.o.
+                      </a>
+                  </h5>
+              </div>
+              <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+                  <div class="card-body">
+              		<ul>
+              			<li>Pokrovitelji fonda su</li>
+              			<ul>
+              				<li>Hrvatske autoceste održavanje i naplata cestarine d.o.o. </li>
+              				<li> AUTOCESTA RIJEKA ZAGREB d.o.o.</li>
+              			</ul>
+              			<li>U fondu mogu štedjeti:</li>
+              				<ol>
+              					<li>Radnici zaposleni kod poslodavca koji je pokrovitelj fonda</li>
+              					<li>Članovi sindikata</li>
+              					<li>Članovi udruga samostalnih, odnosno strukovnih djelatnosti koja je pokrovitelj zatvorenog fonda</li>
+              				</ol>
+              			<li>Poticaji pokrovitelja HEP fonda iznose 25% na osobne uplate do maksimalnog iznosa od 1200 kn godišnje</li>
+              			<li>Ĉlanovi HEP GRUPE ostvaruju pravo i na drţavna poticajna sredstva koja iznose 15% od uplaćenih doprinosa, a najviše do 1200 kn godišnje (Drţavna poticajna sredstva pripisuju se na uplate Pokrovitelja i ĉlana)</li>
+              			<li>Ulazna naknada iznosi 20 kn i naplaćuje se odbitkom od prvih uplata doprinosa u Fond.</li>
+
+              			<li>Poticaji pokrovitelja fonda:</li>
+              			<ul>
+              				<li>Poslodavac HAC ONC trenutno uplaćuje 300 kuna mjeseĉno svojim zaposlenicima </li>
+              				<li>Poslodavac ARZ trenutno uplaćuje 200 kuna mjeseĉno svojim zaposlenicima</li>
+              			</ul>
+              		</ul>
+              		<li>detaljnije <a href="http://www.crosig-trecistup.hr/fondovi/hac-mirovinski-fond/" target="_blank">@crosig.hr</a></li>
+                  </div>
+              </div>
+         </div>
+      </div>
+
+      <div id="accordion" role="tablist">
+          <div class="card">
+              <div class="card-header" role="tab" id="headingFour">
+                  <h5 class="mb-0">
+                      <a data-toggle="collapse" href="#collapseFour" role="button" aria-expanded="true" aria-controls="collapseFour">
+                          Croatia osiguranje d.d.
+                      </a>
+                  </h5>
+              </div>
+              <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion">
+                  <div class="card-body">
+              		<ul>
+              			<li>U fondu mogu štedjeti:</li>
+              				<ol>
+              					<li>Radnici zaposleni kod poslodavca koji je pokrovitelj fonda</li>
+              					<li>Članovi sindikata</li>
+              					<li>Članovi udruga samostalnih, odnosno strukovnih djelatnosti koja je pokrovitelj zatvorenog fonda</li>
+              				</ol>
+              			<li>Poticaji pokrovitelja fonda:</li>
+              			<ul>
+              				<li>Poslodavac CO uplaćuje 100 kn mjeseĉno za minimalno uplaćenih 100 kn, odnosno maksimalno 1.200,00 kn godišnje </li>
+              			</ul>
+              		</ul>
+              		<li>detaljnije <a href="http://www.crosig-trecistup.hr/fondovi/crosig-mirovinski-fond/" target="_blank">@crosig.hr</a></li>
+                  </div>
+              </div>
+         </div>
+      </div>
+
+    <!-- /Accordion -->
+
+    </main><!--/.container-->
+
+    <hr>
+    <footer class="footer">
+      <p>&copy; <a href="mailto:Stjepan.Mudronja@crosig.hr">Stjepan Mudronja</p>
+    </footer>    
+  </div>
+
+
+
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  <script src="..\..\js/bootstrap-4-navbar.js"></script>
+</body>
+</html>
