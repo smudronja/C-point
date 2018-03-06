@@ -1,0 +1,21 @@
+create table scheduleheadings (
+	id int(11) not null PRIMARY KEY AUTO_INCREMENT,
+	createdby varchar(128) not null,
+	heading varchar(128) not null,
+	numberofweek varchar(128) not null,
+	datefrom varchar(128) not null,
+	dateto varchar(128) not null
+);
+
+create table schedulenames (
+	id int(11) not null PRIMARY KEY AUTO_INCREMENT,
+	monday varchar(128) not null,
+	tuesday varchar(128) not null,
+	wednesday varchar(128) not null,
+	thursday varchar(128) not null,
+	friday varchar(128) not null,
+	saturday varchar(128) not null
+);
+
+
+

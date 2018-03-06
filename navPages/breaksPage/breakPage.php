@@ -706,6 +706,5 @@ switch ($selected_val) {
   
   <script src="../../js/modal.js"></script>
 
-  <script src="includes/.inc.php"></script>
 </body>
 </html>
